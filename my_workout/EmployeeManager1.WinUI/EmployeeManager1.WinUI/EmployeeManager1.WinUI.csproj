@@ -15,4 +15,8 @@
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22000.194" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Images\" />
+  </ItemGroup>
 </Project>

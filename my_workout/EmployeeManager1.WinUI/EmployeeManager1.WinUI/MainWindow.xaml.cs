@@ -28,9 +28,6 @@ namespace EmployeeManager1.WinUI
             this.InitializeComponent();
         }
 
-        private void myButton_Click(object sender, RoutedEventArgs e)
-        {
-            myButton.Content = "PluralSight";
-        }
+
     }
 }

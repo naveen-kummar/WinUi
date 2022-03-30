@@ -7,7 +7,25 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-        <Button x:Name="myButton" Click="myButton_Click">Click Me</Button>
-    </StackPanel>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <!--Header-->
+        <Border Grid.ColumnSpan="2" Background="#F05A28">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Image Source="/Images/logo.png" Height="90" Margin="5"/>
+                <TextBlock Text="Employee Manager" FontSize="40" VerticalAlignment="Center"/>
+                
+            </StackPanel>
+            
+        </Border>
+    </Grid>
 </Window>
