@@ -27,5 +27,33 @@
             </StackPanel>
             
         </Border>
+
+        <!--Navigation-->
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Button Content="Refresh"  Margin="10"/>
+            <ListView Grid.Row="1"/>
+        </Grid>
+
+
+        <!--MainArea-->
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <TextBox Header="Firstname" Margin="10"/>
+            <DatePicker Grid.Row="1" Header="Entry date" Margin="10"/>
+            <ComboBox Grid.Row="2" Header="Job role" Margin="10" HorizontalAlignment="Stretch"/>
+            <CheckBox Grid.Row="3" Content="Is coffee drinker" Margin="10"/>
+            <Button Grid.Row="4" Content="Save" Margin="10 10 10 30"/>
+        </Grid>
     </Grid>
 </Window>
